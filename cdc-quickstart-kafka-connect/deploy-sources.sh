@@ -20,7 +20,8 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 
     "key.converter":"io.confluent.connect.avro.AvroConverter",
     "key.converter.schema.registry.url":"http://schema-registry:8081",
     "value.converter":"io.confluent.connect.avro.AvroConverter",
-    "value.converter.schema.registry.url":"http://schema-registry:8081"
+    "value.converter.schema.registry.url":"http://schema-registry:8081",
+    "producer.override.sasl.jaas.config":"org.apache.kafka.common.security.plain.PlainLoginModule required username=\"source_connector\" password=\"source-secret\";"
   }
 }'
 
@@ -45,7 +46,8 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 
     "key.converter":"io.confluent.connect.avro.AvroConverter",
     "key.converter.schema.registry.url":"http://schema-registry:8081",
     "value.converter":"io.confluent.connect.avro.AvroConverter",
-    "value.converter.schema.registry.url":"http://schema-registry:8081"
+    "value.converter.schema.registry.url":"http://schema-registry:8081",
+    "producer.override.sasl.jaas.config":"org.apache.kafka.common.security.plain.PlainLoginModule required username=\"source_connector\" password=\"source-secret\";"
   }
 }'
 
@@ -70,7 +72,8 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 
     "key.converter":"io.confluent.connect.avro.AvroConverter",
     "key.converter.schema.registry.url":"http://schema-registry:8081",
     "value.converter":"io.confluent.connect.avro.AvroConverter",
-    "value.converter.schema.registry.url":"http://schema-registry:8081"
+    "value.converter.schema.registry.url":"http://schema-registry:8081",
+    "producer.override.sasl.jaas.config":"org.apache.kafka.common.security.plain.PlainLoginModule required username=\"source_connector\" password=\"source-secret\";"
   }
 }'
 
@@ -95,7 +98,8 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 
     "key.converter":"io.confluent.connect.avro.AvroConverter",
     "key.converter.schema.registry.url":"http://schema-registry:8081",
     "value.converter":"io.confluent.connect.avro.AvroConverter",
-    "value.converter.schema.registry.url":"http://schema-registry:8081"
+    "value.converter.schema.registry.url":"http://schema-registry:8081",
+    "producer.override.sasl.jaas.config":"org.apache.kafka.common.security.plain.PlainLoginModule required username=\"source_connector\" password=\"source-secret\";"
   }
 }'
 

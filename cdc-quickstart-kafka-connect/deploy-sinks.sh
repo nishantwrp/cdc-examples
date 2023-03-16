@@ -17,7 +17,8 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 
       "delete.enabled":"true",
       "transforms": "unwrap",
       "transforms.unwrap.type": "io.debezium.connector.yugabytedb.transforms.YBExtractNewRecordState",
-      "transforms.unwrap.drop.tombstones": "false"
+      "transforms.unwrap.drop.tombstones": "false",
+      "consumer.override.sasl.jaas.config":"org.apache.kafka.common.security.plain.PlainLoginModule required username=\"sink_connector\" password=\"sink-secret\";"
    }
 }'
 
@@ -40,7 +41,8 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 
       "delete.enabled":"true",
       "transforms": "unwrap",
       "transforms.unwrap.type": "io.debezium.connector.yugabytedb.transforms.YBExtractNewRecordState",
-      "transforms.unwrap.drop.tombstones": "false"
+      "transforms.unwrap.drop.tombstones": "false",
+      "consumer.override.sasl.jaas.config":"org.apache.kafka.common.security.plain.PlainLoginModule required username=\"sink_connector\" password=\"sink-secret\";"
    }
 }'
 
@@ -63,7 +65,8 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 
       "delete.enabled":"true",
       "transforms": "unwrap",
       "transforms.unwrap.type": "io.debezium.connector.yugabytedb.transforms.YBExtractNewRecordState",
-      "transforms.unwrap.drop.tombstones": "false"
+      "transforms.unwrap.drop.tombstones": "false",
+      "consumer.override.sasl.jaas.config":"org.apache.kafka.common.security.plain.PlainLoginModule required username=\"sink_connector\" password=\"sink-secret\";"
    }
 }'
 
@@ -86,6 +89,7 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 
       "delete.enabled":"true",
       "transforms": "unwrap",
       "transforms.unwrap.type": "io.debezium.connector.yugabytedb.transforms.YBExtractNewRecordState",
-      "transforms.unwrap.drop.tombstones": "false"
+      "transforms.unwrap.drop.tombstones": "false",
+      "consumer.override.sasl.jaas.config":"org.apache.kafka.common.security.plain.PlainLoginModule required username=\"sink_connector\" password=\"sink-secret\";"
    }
 }'
